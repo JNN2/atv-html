@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('/atv/imagem/1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+header {
+  background: linear-gradient(to bottom, rgb(16, 42, 63),  rgb(50, 2, 65) );
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}

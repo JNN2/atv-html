@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rádio Online</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/radio.css">
+</head>
+<body>
+  <header>
+    <h1>Mini Rádio</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="carrossel.html">Galeria</a>
+      <a href="login.html">Fórum</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="player">
+      <p id="now">Parado</p>
+      <div class="controls">
+        <button id="play">▶️ Play</button>
+        <button id="pause">⏸️ Pause</button>
+        <label>Volume <input id="vol" type="range" min="0" max="1" step="0.05" value="0.8"></label>
+      </div>
+      <h3>Playlist</h3>
+      <div id="playlist"></div>
+    </div>
+  </main>
+
+  <script src="js/radio.js"></script>
+</body>
+</html>

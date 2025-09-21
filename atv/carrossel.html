@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carrossel de Fotos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carrossel.css">
+</head>
+<body>
+  <header>
+    <h1>Galeria</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="radio.html">Rádio</a>
+      <a href="login.html">Fórum</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="carousel" id="carousel">
+      <button class="ctrl prev" id="prev">❮</button>
+      <div class="viewport">
+        <div class="track" id="track">
+          <div class="slide"><img src="/atv/imagem/2.jpg" alt=""></div>
+          <div class="slide"><img src="/atv/imagem/3.webp" alt=""></div>
+          <div class="slide"><img src="/atv/imagem/4.webp" alt=""></div>
+          <div class="slide"><img src="/atv/imagem/5.jpg" alt=""></div>
+          <div class="slide"><img src="/atv/imagem/6.jpg" alt=""></div>
+        </div>
+      </div>
+      <button class="ctrl next" id="next">❯</button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </main>
+
+  <script src="js/carrossel.js"></script>
+</body>
+</html>

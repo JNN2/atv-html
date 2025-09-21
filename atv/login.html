@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Fórum</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Login no Fórum</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="carrossel.html">Galeria</a>
+      <a href="radio.html">Rádio</a>
+    </nav>
+  </header>
+  <main>
+    <form id="loginForm">
+      <label>Usuário:</label><br>
+      <input type="text" id="username" required><br><br>
+      <label>Senha:</label><br>
+      <input type="password" id="password" required><br><br>
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="msg"></p>
+  </main>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      // login simples (apenas exemplo)
+      if (user === "admin" && pass === "1234") {
+        localStorage.setItem("logado", user);
+        window.location.href = "forum.html";
+      } else {
+        document.getElementById('msg').textContent = "Usuário ou senha incorretos.";
+      }
+    });
+  </script>
+</body>
+</html>
